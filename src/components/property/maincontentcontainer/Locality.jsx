@@ -5,6 +5,7 @@ import { PiThumbsUp, PiThumbsDown } from 'react-icons/pi'
 import styles from './locality.module.css'
 
 function Locality(props) {
+    //console.log(props)
 
     const [showFull, setShowFull] = useState(false)
 
@@ -12,15 +13,15 @@ function Locality(props) {
         <div className={styles.localityOverviewContainer}>
             {props.desc && <div className={styles.localityHead}>
                 <div className={styles.localityHeadMain}>
-                    <h2>{props.localityData.title}</h2>
-                    <h5>{props.localityData.subtitle}</h5>
+                    <h2>{props.localityData?.title}</h2>
+                    <h5>{props.localityData?.subtitle}</h5>
                 </div>
-                <button> View {props.localityData.title} Overview</button>
+                <button> View {props.localityData?.title} Overview</button>
             </div>}
             <div className={styles.localityContent}>
                {props.hasLocalityIntro && <div className={styles.localityContentHead}>
                     <h3>Locality Introduction</h3>
-                    <p>{showFull ? props.localityData.introduction : `${props.localityData.introduction.substring(0, 200)}`}</p>
+                    <p>{showFull ? props.localityData?.introduction : `${props.localityData?.introduction?.substring(0, 200)}`}</p>
                     <h6 onClick={() => setShowFull(!showFull)}>{showFull ? 'Read Less' : 'Read More'}</h6>
                 </div>}
                 <div className={`${styles.localityContentData} ${!props.hasLocalityIntro && '!mb-0'}`}>
@@ -35,7 +36,7 @@ function Locality(props) {
                     <div className={styles.localityContentDataProCon}>
                         <h2 className="pl-[20px] text-2xl"><FaThumbsDown style={{ display: 'inline', marginRight: '0.5rem', }} color='red' /> Con&apos;s</h2>
                         <ul>
-                            {props.localityData.Cons.map((dt, index) => (
+                            {props.localityData?.Cons?.map((dt, index) => (
                                 <li key={index} className="text-left" >
                                     <PiThumbsDown style={{ marginRight: '0.5rem', display: 'inline' }} color='red' />
                                     {dt}

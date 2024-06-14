@@ -4,9 +4,9 @@ import { useState } from 'react'
 import styles from './specification.module.css'
 
 function Specification(props) {
-
-    const parking = props.specificationData.Parking
-    const interior = props.specificationData.Interior
+    console.log(props)
+    const parking = props.specificationData?.Parking
+    const interior = props.specificationData?.Interior
 
     const [readMore, setReadMore] = useState(false)
 
@@ -18,7 +18,7 @@ function Specification(props) {
                   <div className={styles.specificationSubContainerDataBlock}>
                       <h4>Parking Information</h4>
                       <ul>
-                        {parking.parkingInfo.map((dt,index)=>(
+                        {parking?.parkingInfo?.map((dt,index)=>(
                             <li key={index}>{dt}</li>
                         ))}
                       </ul>
@@ -39,7 +39,7 @@ function Specification(props) {
                 <div className={styles.specificationSubContainerDataBlock}>
                     <h4>Bathroom Information</h4>
                     <ul>
-                        {interior.bathroomInfo.map((dt,index)=>(
+                        {interior?.bathroomInfo?.map((dt,index)=>(
                             <li key={index}>{dt}</li>
                         ))}
                     </ul>
@@ -47,7 +47,7 @@ function Specification(props) {
                 <div className={styles.specificationSubContainerDataBlock}>
                     <h4>Bedroom Information</h4>
                     <ul>
-                        {interior.bedroomInfo.map((dt,index)=>(
+                        {interior?.bedroomInfo?.map((dt,index)=>(
                             <li key={index}>{dt}</li>
                         ))}
                     </ul>
@@ -55,7 +55,7 @@ function Specification(props) {
                 <div className={styles.specificationSubContainerDataBlock}>
                     <h4>Room Information</h4>
                     <ul>
-                        {interior.room1Info.map((dt,index)=>(
+                        {interior?.roomInfo?.map((dt,index)=>(
                             <li key={index}>{dt}</li>
                         ))}
                     </ul>
