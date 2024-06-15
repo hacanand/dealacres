@@ -25,12 +25,12 @@ const PropertyCard = ({
   return (
     <div className="p-4 border border-blue-600 rounded-2xl bg-white max-sm:w-full max-md:w-full shadow-md">
       <div className="grid  grid-cols-3  gap-4 max-md:w-full">
-        <div className="col-span-1">
-          <div className="rounded-2xl overflow-hidden w-full self-center h-full">
+        <div className="col-span-1 ">
+          <div className="rounded-2xl overflow-hidden w-full h-full">
             <img
               src={imageUrl}
               alt="Property Image"
-              className="object-cover rounded-2xl w-full  h-full"
+              className="object-cover rounded-2xl w-full max-sm:aspect-square  h-full "
             />
           </div>
         </div>
