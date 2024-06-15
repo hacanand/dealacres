@@ -67,7 +67,7 @@ function Specification(props) {
                 <div className={styles.specificationSubContainerDataBlock}>
                     <h4>Room Information</h4>
                     <ul>
-                        {interior.room2Info.map((dt,index)=>(
+                        {interior?.room2Info?.map((dt,index)=>(
                             <li key={index}>{dt}</li>
                         ))}
                     </ul>
@@ -75,7 +75,7 @@ function Specification(props) {
                 <div className={styles.specificationSubContainerDataBlock}>
                     <h4>Room Information</h4>
                     <ul>
-                        {interior.room3Info.map((dt,index)=>(
+                        {interior?.room3Info?.map((dt,index)=>(
                             <li key={index}>{dt}</li>
                         ))}
                     </ul>
@@ -83,7 +83,7 @@ function Specification(props) {
                <div className={styles.specificationSubContainerDataBlock}>
                     <h4>Room Information</h4>
                     <ul>
-                        {interior.room4Info.map((dt,index)=>(
+                        {interior?.room4Info?.map((dt,index)=>(
                             <li key={index}>{dt}</li>
                         ))}
                     </ul>
@@ -91,7 +91,7 @@ function Specification(props) {
                 <div className={styles.specificationSubContainerDataBlock}>
                     <h4>Room Information</h4>
                     <ul>
-                        {interior.room5Info.map((dt,index)=>(
+                        {interior?.room5Info?.map((dt,index)=>(
                             <li key={index}>{dt}</li>
                         ))}
                     </ul>
@@ -99,7 +99,7 @@ function Specification(props) {
                 <div className={styles.specificationSubContainerDataBlock}>
                     <h4>Room Information</h4>
                     <ul>
-                        {interior.room6Info.map((dt,index)=>(
+                        {interior?.room6Info?.map((dt,index)=>(
                             <li key={index}>{dt}</li>
                         ))}
                     </ul>
@@ -107,7 +107,7 @@ function Specification(props) {
                 <div className={styles.specificationSubContainerDataBlock}>
                     <h4>Room Information</h4>
                     <ul>
-                        {interior.room7Info.map((dt,index)=>(
+                        {interior?.room7Info?.map((dt,index)=>(
                             <li key={index}>{dt}</li>
                         ))}
                     </ul>
@@ -115,7 +115,7 @@ function Specification(props) {
                 <div className={styles.specificationSubContainerDataBlock}>
                     <h4>Additional rooms Information</h4>
                     <ul>
-                        {interior.addRoomInfo.map((dt,index)=>(
+                        {interior?.addRoomInfo?.map((dt,index)=>(
                             <li key={index}>{dt}</li>
                         ))}
                     </ul>
@@ -125,7 +125,7 @@ function Specification(props) {
                 <div className={styles.specificationSubContainerDataBlock}>
                     <h4>Interior Features</h4>
                     <ul>
-                        {interior.interiorFeatures.map((dt,index)=>(
+                        {interior.interiorFeatures?.map((dt,index)=>(
                             <li key={index}>{dt}</li>
                         ))}
                     </ul>

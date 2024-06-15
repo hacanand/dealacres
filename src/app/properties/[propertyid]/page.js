@@ -25,7 +25,10 @@ import { useEffect, useState } from 'react'
      const fetchingData = async () => {
        try {
          const response = await axios(
-           "https://dealacresbackend.onrender.com/api/newproperty"
+           "https://dealacresbackend.onrender.com/api/newproperty",
+           {
+             caches: "force-cache",
+           }
          );
          const data = response.data;
          console.log(data);

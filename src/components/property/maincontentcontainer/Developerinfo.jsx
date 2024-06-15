@@ -4,7 +4,7 @@ import styles from './developerinfo.module.css'
 import Image from 'next/image'
 
 function Developerinfo(props) {
-
+// console.log(props)
   const [showFull, setShowFull] = useState(false)
 
   return (
