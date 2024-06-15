@@ -47,9 +47,6 @@ const AllProperty = () => {
 
 
   return (
-    
-   
-       
       <div className="px-[5rem] py-[3rem] w-full rounded-xl max-md:px-[4rem] max-sm:px-5">
         <div className="flex flex-row w-full">
           <div className="w-[25%] max-xl:w-0">

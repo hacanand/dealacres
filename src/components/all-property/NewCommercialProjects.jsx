@@ -34,7 +34,7 @@ const NewCommercialProjects = () => {
         Recently added projects and phases in Delhi / NCR (All)
       </p>
 
-      <div className="flex flex-col md:flex-row md:items-center md:justify-between">
+      <div className="flex flex-row md:items-center md:justify-between overflow-x-auto">
         {projects.map((project, index) => (
           <div
             key={index}
